@@ -1,0 +1,149 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f0f4fa 0%, #e9eef4 100%);
+  padding: 2rem 1rem;
+  min-height: 100vh;
+}
+
+.glass-card {
+  background: rgba(255,255,255,0.96);
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 20px 35px -12px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s;
+}
+
+.glass-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 25px 40px -14px rgba(0,0,0,0.12);
+}
+
+.summary-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.bg-soft-primary { background: #eef2ff; color: #2c3e8f; }
+.bg-soft-success { background: #e0f2e9; color: #1e7b48; }
+.bg-soft-danger { background: #ffe6e3; color: #c23d2b; }
+.bg-soft-warning { background: #fff0e0; color: #c97e0a; }
+
+.badge-category {
+  background: #eef2ff;
+  color: #1f3a6b;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 40px;
+  font-size: 0.75rem;
+}
+
+.transaction-table {
+  font-size: 0.85rem;
+}
+
+.transaction-table tbody tr {
+  border-bottom: 1px solid #edf2f9;
+  transition: background 0.15s;
+}
+
+.transaction-table tbody tr:hover {
+  background: #fafdff;
+}
+
+.amount-positive { color: #15803d; font-weight: 700; }
+.amount-negative { color: #b91c1c; font-weight: 700; }
+
+.filter-input-group {
+  border-radius: 60px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s;
+}
+
+.filter-input-group:focus-within {
+  border-color: #3b71ca;
+  box-shadow: 0 0 0 3px rgba(59,113,202,0.2);
+}
+
+.btn-outline-custom {
+  border-radius: 40px;
+  padding: 6px 18px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.empty-state {
+  background: #f8fafd;
+  border-radius: 1.8rem;
+  padding: 2.2rem 1rem;
+  text-align: center;
+}
+
+.add-transaction-form {
+  background: #ffffffdd;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #eef2f8;
+}
+
+.chart-container canvas {
+  max-height: 220px;
+  width: 100%;
+}
+
+.insight-badge {
+  background: #f1f5f9;
+  border-radius: 60px;
+  padding: 0.25rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+footer {
+  font-size: 0.75rem;
+  color: #5b6e8c;
+}
+
+@media (max-width: 768px) {
+  body { padding: 1rem 0.75rem; }
+  .summary-icon { width: 44px; height: 44px; font-size: 1.3rem; }
+}
+
+.scrollable-table {
+  max-height: 380px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.form-control-sm, .form-select-sm {
+  border-radius: 40px;
+}
+
+.btn-icon {
+  background: transparent;
+  border: none;
+  color: #8b9eb5;
+  transition: 0.2s;
+}
+
+.btn-icon:hover { color: #dc2626; transform: scale(1.05); }
+
+/* role toggle custom style */
+.role-toggle {
+  background: #eef2ff;
+  border-radius: 40px;
+  padding: 4px;
+}
+.role-toggle .btn {
+  border-radius: 40px;
+  padding: 4px 16px;
+  font-size: 0.8rem;
+}
