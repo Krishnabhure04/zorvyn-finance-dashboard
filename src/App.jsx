@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import Chart from 'chart.js/auto';
+import { Analytics } from '@vercel/analytics/react';
 
 // ---------- Helper functions ----------
 const formatCurrency = (value) => {
@@ -569,6 +570,7 @@ function App() {
         <span>📊 Zorvyn Screening Dashboard • React + Vite + Chart.js</span>
         <span>⚡ Full RBAC simulation • Time trend • Monthly insights</span>
       </footer>
+      <Analytics />
     </div>
   );
 }
